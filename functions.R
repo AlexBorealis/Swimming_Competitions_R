@@ -11,16 +11,16 @@ by_swim <- function(tbl,
     
     if (i == 1) {
       
-      r[i] <- ceiling(median(r))
+      r[i] <- floor(median(r))
       
     } else 
       if (i %% 2 == 0) {
         
-        r[i] <- ceiling(median(r)) - j
+        r[i] <- floor(median(r)) + j
         
       } else {
         
-        r[i] <- ceiling(median(r)) + j
+        r[i] <- floor(median(r)) - j
         
       }
     

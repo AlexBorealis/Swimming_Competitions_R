@@ -14,4 +14,4 @@ sexes <- unique(DT$sex)
 
 byears <- unique(DT$byear)
 
-by_swim(tbl = DT, sx = sexes[1], dist = distances[5], by = byears[1], races = 4)
+by_swim(tbl = DT, sx = sexes[1], dist = distances[5], by = byears[1], races = 5)
