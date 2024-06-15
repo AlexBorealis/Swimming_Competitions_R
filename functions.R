@@ -26,7 +26,9 @@ by_swim <- function(tbl,
     
   })
   
-  tbl[sex == sx & distance == dist & byear != by][order(time)] %>%
+  new_tbl <- DT[sex == sx & distance == dist & byear %in% by]
+  
+  new_tbl[order(distance, time)] %>%
     .[, .(swim = rep(1:ceiling( nrow(.)/races), each = races)[1:nrow(.)],
           race = num_race,
           name,
