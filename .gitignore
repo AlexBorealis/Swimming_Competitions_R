@@ -8,7 +8,6 @@ draft.R
 /*.png
 /*.Rout
 /*.lock
-/*.Rprofile
 /*.Rproj
 /*.here
 /*.json
